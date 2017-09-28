@@ -116,6 +116,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1738492216}
+  - component: {fileID: 1738492218}
   - component: {fileID: 1738492215}
   - component: {fileID: 1738492217}
   m_Layer: 0
@@ -205,6 +206,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.4, y: 13.9}
   m_EdgeRadius: 0
+--- !u!114 &1738492218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1738492214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85ad085b47a7bd4ca872a3f571d55e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1955245273}
+  num: 1
 --- !u!1 &1882957899
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +227,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1882957901}
+  - component: {fileID: 1882957903}
   - component: {fileID: 1882957900}
   - component: {fileID: 1882957902}
   m_Layer: 0
@@ -302,6 +317,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.4, y: 13.9}
   m_EdgeRadius: 0
+--- !u!114 &1882957903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882957899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85ad085b47a7bd4ca872a3f571d55e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1955245273}
+  num: 3
 --- !u!1 &1945040012
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +338,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1945040014}
+  - component: {fileID: 1945040016}
   - component: {fileID: 1945040013}
   - component: {fileID: 1945040015}
   m_Layer: 0
@@ -399,6 +428,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.4, y: 13.9}
   m_EdgeRadius: 0
+--- !u!114 &1945040016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945040012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85ad085b47a7bd4ca872a3f571d55e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1955245273}
+  num: 2
 --- !u!1 &1955245269
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +542,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81d7f853c4be26540b26945e174e148a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2030614375}
+  area2: {fileID: 1945040014}
+  cam: {fileID: 1955245273}
+  area: 0
 --- !u!1 &2030614373
 GameObject:
   m_ObjectHideFlags: 0
