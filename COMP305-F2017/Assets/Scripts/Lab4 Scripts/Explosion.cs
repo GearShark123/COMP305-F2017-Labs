@@ -5,7 +5,7 @@ using UnityEngine;
 public class Explosion : MonoBehaviour {
 
     public float explosionRadius = 50.0f;
-    public float explosionForce = 1.0f;
+    public float explosionForce = 10f;
 
     private Rigidbody rBody;
     private RaycastHit2D[] hits;
@@ -22,5 +22,7 @@ public class Explosion : MonoBehaviour {
             if (h.transform.gameObject.tag == "Robot")
                 h.rigidbody.AddForce((h.transform.position - this.transform.position) * explosionForce, ForceMode2D.Impulse);
         }
+
+        Destroy(this.gameObject, 1f);
     }
 }

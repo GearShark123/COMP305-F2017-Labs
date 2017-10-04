@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Bomb : MonoBehaviour {
     private int counter;
+    public GameObject explosion;    
 
     // Use this for initialization
     void Start () {
@@ -13,6 +15,7 @@ public class Bomb : MonoBehaviour {
 
     void MakeExplosion()
     {
-        // Create Explosion 
+        Instantiate(explosion, new Vector3(this.transform.position.x, this.transform.position.y +0.8f, this.transform.position.z), this.transform.rotation);
+        Destroy(this.gameObject);
     }
 }
