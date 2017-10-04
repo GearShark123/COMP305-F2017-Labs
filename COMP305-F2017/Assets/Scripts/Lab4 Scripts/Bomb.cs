@@ -1,15 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Bomb : MonoBehaviour {
-    private int counter;
+public class Bomb : MonoBehaviour {    
     public GameObject explosion;    
 
     // Use this for initialization
-    void Start () {
-        counter = 0;
+    void Start () {  
         Invoke("MakeExplosion",3f);
 	}	
 
