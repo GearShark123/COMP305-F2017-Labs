@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4514649105618910}
   - component: {fileID: 212508374660929786}
   - component: {fileID: 61529551867331494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nut
   m_TagString: Untagged
   m_Icon: {fileID: 0}

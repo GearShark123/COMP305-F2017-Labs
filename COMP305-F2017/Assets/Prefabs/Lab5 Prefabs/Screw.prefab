@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4077905874156906}
   - component: {fileID: 212635081238314916}
   - component: {fileID: 61354127281666552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}

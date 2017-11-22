@@ -245,6 +245,7 @@ MonoBehaviour:
   bolt: {fileID: 1276413076294294, guid: f032bc52b0f824449bdff9706737a8bc, type: 2}
   nut: {fileID: 1801479540029604, guid: bcf2483282cf22847bf9fd08f140490c, type: 2}
   screw: {fileID: 1924512966689122, guid: 1a93d6155120b26459bff85e50c64d48, type: 2}
+  items: 
 --- !u!1001 &811758746
 Prefab:
   m_ObjectHideFlags: 0
@@ -461,8 +462,8 @@ GameObject:
   - component: {fileID: 1134412576}
   - component: {fileID: 1134412575}
   - component: {fileID: 1134412579}
-  - component: {fileID: 1134412577}
   - component: {fileID: 1134412578}
+  - component: {fileID: 1134412577}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -537,6 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  gm: {fileID: 430229125}
 --- !u!61 &1134412578
 BoxCollider2D:
   m_ObjectHideFlags: 0

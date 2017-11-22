@@ -10,12 +10,13 @@ public class PlayerControl2 : MonoBehaviour
     private float moveVertical;
     private Vector2 movement;
 
+    public GameObject gm;
+
     // Use this for initialization
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {
@@ -77,4 +78,24 @@ public class PlayerControl2 : MonoBehaviour
         }
 
     }
-}
+
+    void OnCollisionEnter2D(Collision2D col)
+    {        
+        if (col.gameObject.name == "Bolt(Clone)")
+        {
+            gm.SendMessage("Collected", "bolt");
+            Destroy(col.gameObject);
+        }
+        else if (col.gameObject.name == "Nut(Clone)")
+        {
+            gm.SendMessage("Collected", "nut");
+            Destroy(col.gameObject);
+        }
+        else if (col.gameObject.name == "Screw(Clone)")
+        {
+            gm.SendMessage("Collected", "screw");
+            Destroy(col.gameObject);
+        }
+    }
+
+    }

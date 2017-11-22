@@ -9,33 +9,52 @@ public class GMControl2 : MonoBehaviour {
     public GameObject screw;
 
     private int num;
+    private int[] items; 
 
     // Use this for initialization
     void Start () {
 
-        for (int i = 0; i <= 30; i++)
-        {
-            num = Random.Range(0, 3) + 1;
+        items = new int[3]; 
 
-            if (num == 1)
+        for (int i = 0; i < 30; i++)
+        {
+            num = Random.Range(0, 3);
+
+            if (num == 0)
             {
                 Instantiate(bolt, new Vector3(Random.Range(-8, 9), Random.Range(-4, 5), 0), Quaternion.identity);
             }
-            else if (num == 2)
+            else if (num == 1)
             {
                 Instantiate(nut, new Vector3(Random.Range(-8, 9), Random.Range(-4, 5), 0), Quaternion.identity);
             }
             else
             {
                 Instantiate(screw, new Vector3(Random.Range(-8, 9), Random.Range(-4, 5), 0), Quaternion.identity);
-            }
-            i++;
+            }         
+            
         }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        //print(num = Random.Range(-1, 2));
+        
 
+    }
+
+    void Collected(string item)
+    {
+        if (item == "bolt")
+        {
+            items[0] += 1;
+        }
+        else if (item == "nut")
+        {
+            items[1] += 1;
+        }
+        else
+        {
+            items[2] += 1;
+        }
     }
 }
