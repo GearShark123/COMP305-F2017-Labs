@@ -1,20 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GMControl2 : MonoBehaviour {
+public class GMControl2 : MonoBehaviour
+{
 
     public GameObject bolt;
     public GameObject nut;
     public GameObject screw;
 
     private int num;
-    private int[] items; 
+    private int[] items;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-        items = new int[3]; 
+        items = new int[3];
 
         for (int i = 0; i < 30; i++)
         {
@@ -31,14 +39,15 @@ public class GMControl2 : MonoBehaviour {
             else
             {
                 Instantiate(screw, new Vector3(Random.Range(-8, 9), Random.Range(-4, 5), 0), Quaternion.identity);
-            }         
-            
+            }
+
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
 
     }
 
@@ -60,6 +69,17 @@ public class GMControl2 : MonoBehaviour {
 
     void LoadNewScene()
     {
+        SceneManager.LoadScene("Lab5 Part2");
+        //SceneManager.LoadScene("lab4");
+        //SceneManager.LoadScene("lab4", LoadSceneMode.Additive);
+    }
 
+    void Items()
+    {
+        int[] loot = items;
+        GameObject gm = GameObject.Find("InventoryGM");
+        gm.SendMessage("GetItems", loot);
+        //if (gm.name == "InventoryGM")
+        //    print("ok");
     }
 }

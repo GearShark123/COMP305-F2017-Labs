@@ -80,7 +80,7 @@ public class PlayerControl2 : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col)
-    {        
+    {
         if (col.gameObject.name == "Bolt(Clone)")
         {
             gm.SendMessage("Collected", "bolt");
@@ -98,4 +98,4 @@ public class PlayerControl2 : MonoBehaviour
         }
     }
 
-    }
+}

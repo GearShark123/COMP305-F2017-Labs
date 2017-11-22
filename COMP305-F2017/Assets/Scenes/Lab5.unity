@@ -245,7 +245,6 @@ MonoBehaviour:
   bolt: {fileID: 1276413076294294, guid: f032bc52b0f824449bdff9706737a8bc, type: 2}
   nut: {fileID: 1801479540029604, guid: bcf2483282cf22847bf9fd08f140490c, type: 2}
   screw: {fileID: 1924512966689122, guid: 1a93d6155120b26459bff85e50c64d48, type: 2}
-  items: 
 --- !u!1001 &811758746
 Prefab:
   m_ObjectHideFlags: 0
@@ -778,6 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79402432b45ce6243a3dad1ba1a09368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 430229125}
+  timer: {fileID: 2037878227}
 --- !u!1001 &2110941843
 Prefab:
   m_ObjectHideFlags: 0

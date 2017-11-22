@@ -5,12 +5,10 @@ using UnityEngine.UI;
 
 public class TimerControl : MonoBehaviour
 {
-
-    //public Component Timer;
-
-    Text timer;
-    float time;
-    float num;
+    public GameObject gm;
+    public Text timer;
+    private float num;
+    private bool loadOnce = false;
 
     // Use this for initialization
     void Start()
@@ -23,11 +21,21 @@ public class TimerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        num = 30 - Time.realtimeSinceStartup;
-        while (num > 0)
+        num = 5 - Time.realtimeSinceStartup;
+
+        if (num > 0f)
         {
-            timer.text = string.Format("{0:f1}", num);            
+            timer.text = string.Format("{0:f1}", num);
+            if ((int)num == 0.0)
+            {
+                if (loadOnce == false)
+                {
+                    gm.SendMessage("LoadNewScene");
+                    loadOnce = true;
+                }
+            }
         }
-        
+
+
     }
 }
