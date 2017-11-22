@@ -68,13 +68,13 @@ public class PlayerControl2 : MonoBehaviour
                 rbody.AddForce(movement * speed);
             }
         }
-        
-            // This slows down the speed of the player gradually
-            if (rbody.velocity.magnitude > 0)
-            {
-                movement = rbody.velocity - (rbody.velocity / 10);
-                rbody.velocity = movement;
-            }
-        
+
+        // This slows down the speed of the player gradually
+        if (rbody.velocity.magnitude > 0)
+        {
+            movement = rbody.velocity - (rbody.velocity / 10);
+            rbody.velocity = movement;
+        }
+
     }
 }
