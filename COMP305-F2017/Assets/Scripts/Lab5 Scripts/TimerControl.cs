@@ -10,6 +10,7 @@ public class TimerControl : MonoBehaviour
 
     Text timer;
     float time;
+    float num;
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,11 @@ public class TimerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer.text = string.Format("{0:f1}", (30 - Time.realtimeSinceStartup));
+        num = 30 - Time.realtimeSinceStartup;
+        while (num > 0)
+        {
+            timer.text = string.Format("{0:f1}", num);            
+        }
+        
     }
 }

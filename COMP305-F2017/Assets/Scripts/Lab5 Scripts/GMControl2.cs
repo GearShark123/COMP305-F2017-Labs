@@ -57,4 +57,9 @@ public class GMControl2 : MonoBehaviour {
             items[2] += 1;
         }
     }
+
+    void LoadNewScene()
+    {
+
+    }
 }
