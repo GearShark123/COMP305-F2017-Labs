@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GMControl2 : MonoBehaviour
 {
-
     public GameObject bolt;
     public GameObject nut;
     public GameObject screw;
@@ -44,13 +43,6 @@ public class GMControl2 : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-    }
-
     void Collected(string item)
     {
         if (item == "bolt")
@@ -70,8 +62,6 @@ public class GMControl2 : MonoBehaviour
     void LoadNewScene()
     {
         SceneManager.LoadScene("Lab5 Part2");
-        //SceneManager.LoadScene("lab4");
-        //SceneManager.LoadScene("lab4", LoadSceneMode.Additive);
     }
 
     void Items()
@@ -79,7 +69,5 @@ public class GMControl2 : MonoBehaviour
         int[] loot = items;
         GameObject gm = GameObject.Find("InventoryGM");
         gm.SendMessage("GetItems", loot);
-        //if (gm.name == "InventoryGM")
-        //    print("ok");
     }
 }

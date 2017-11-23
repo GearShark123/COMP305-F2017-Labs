@@ -10,18 +10,10 @@ public class TimerControl : MonoBehaviour
     private float num;
     private bool loadOnce = false;
 
-    // Use this for initialization
-    void Start()
-    {
-
-        timer = GetComponent<Text>();
-        timer.text = "30";
-    }
-
     // Update is called once per frame
     void Update()
     {
-        num = 5 - Time.realtimeSinceStartup;
+        num = 30 - Time.realtimeSinceStartup;
 
         if (num > 0f)
         {
@@ -35,7 +27,5 @@ public class TimerControl : MonoBehaviour
                 }
             }
         }
-
-
     }
 }
