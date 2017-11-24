@@ -112,6 +112,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 88ca3a2e9ed61aa392b57f4c712e37f2 Assembly-CSharp.dll:.PlayerArea
+430befb6fbdbc65dd3726bcf7b68a79d Assembly-CSharp.dll:.LightFlicker
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 a7882ab14ffaf1406efe65c5940af393 Assembly-CSharp.dll:.GMControl2
 9982fac15dcd9d11232d51b39bedaef0 Assembly-CSharp.dll:.Bomb
