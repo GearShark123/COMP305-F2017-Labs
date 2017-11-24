@@ -249,7 +249,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1528303441
+  randomSeed: -26629510
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3461,6 +3461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 148515200}
   - component: {fileID: 148515199}
+  - component: {fileID: 148515201}
   m_Layer: 0
   m_Name: Dark Alley Point Light
   m_TagString: Untagged
@@ -3517,6 +3518,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148515201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148515198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d4b7a591f53374197ab6d41f12e7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 148515199}
+  maxValue: 15
+  minValue: 12
+  change: 0.1
 --- !u!1 &654206148
 GameObject:
   m_ObjectHideFlags: 0
